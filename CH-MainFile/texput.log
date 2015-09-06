@@ -1,0 +1,582 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2012.5.8)  26 AUG 2012 15:50
+entering extended mode
+**\scrollmode
+
+*
+(Please type a command or say `\end')
+*\documentclass[12pt]{article}
+
+*\usepackage[russian]{babel}
+(D:\Science\MikTeX2-9\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(D:\Science\MikTeX2-9\tex\latex\base\size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+*\def\ASYprefix{}
+(D:\Science\MikTeX2-9\tex\generic\babel\babel.sty
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(D:\Science\MikTeX2-9\tex\latex\00miktex\bblopts.cfg
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+(D:\Science\MikTeX2-9\tex\generic\babel\russianb.ldf
+Language: russianb 2008/03/21 v1.1r Russian support from the babel system
+
+(D:\Science\MikTeX2-9\tex\generic\babel\babel.def
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+(D:\Science\MikTeX2-9\tex\latex\cyrillic\t2aenc.def
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+)
+
+Package babel Warning: No input encoding specified for Russian language on inpu
+t line 136.
+
+Package babel Info: Making " an active character on input line 199.
+))
+*\newbox\ASYbox
+\ASYbox=\box26
+
+*\newdimen\ASYdimen
+\ASYdimen=\dimen104
+
+*\long\def\ASYbase#1#2{\leavevmode\setbox\ASYbox=\hbox{#1}\ASYdimen=\ht\ASYbox%
+
+
+*\setbox\ASYbox=\hbox{#2}\lower\ASYdimen\box\ASYbox}
+
+*\usepackage{graphicx}
+
+*\begin{document}
+(D:\Science\MikTeX2-9\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\Science\MikTeX2-9\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(D:\Science\MikTeX2-9\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Science\MikTeX2-9\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(D:\Science\MikTeX2-9\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(D:\Science\MikTeX2-9\tex\latex\graphics\dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+("D:\Science\My books\__IN WORK__ TeX 2nd Edition\Current text\CH-MainFile\texp
+ut.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 0.
+LaTeX Font Info:    ... okay on input line 0.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 0.
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 0.
+ (D:\Science\MikTeX2-9\tex\latex\cyrillic\t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+LaTeX Font Info:    ... okay on input line 0.
+
+*\makeatletter%
+
+*\let\ASYencoding\f@encoding%
+
+*\let\ASYfamily\f@family%
+
+*\let\ASYseries\f@series%
+
+*\let\ASYshape\f@shape%
+
+*\makeatother%
+
+*\fontsize{12}{14.4}\selectfont
+
+*\usefont{\ASYencoding}{\ASYfamily}{\ASYseries}{\ASYshape}%
+
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\small Исходный файл
+\\*.tex\end{minipage}}
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 0.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 0.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 0.
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 13.57076pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 7.57074pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\fontsize{12}{14.4}\selectfont
+
+*\usefont{\ASYencoding}{\ASYfamily}{\ASYseries}{\ASYshape}%
+
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\bf\small Компилятор
+\\ядро \TeX\end{minipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 14.7722pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 8.7722pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\fontsize{12}{14.4}\selectfont
+
+*\usefont{\ASYencoding}{\ASYfamily}{\ASYseries}{\ASYshape}%
+
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\small Класс докумен
+та\\Пакеты\end{minipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 13.57076pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 7.57074pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\fontsize{12}{14.4}\selectfont
+
+*\usefont{\ASYencoding}{\ASYfamily}{\ASYseries}{\ASYshape}%
+
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\small Вспомогательн
+ые\\файлы\end{minipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 14.63507pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 8.63506pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\fontsize{12}{14.4}\selectfont
+
+*\usefont{\ASYencoding}{\ASYfamily}{\ASYseries}{\ASYshape}%
+
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\small Шрифты\end{mi
+nipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 7.83507pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 1.83505pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\fontsize{12}{14.4}\selectfont
+
+*\usefont{\ASYencoding}{\ASYfamily}{\ASYseries}{\ASYshape}%
+
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\small Документ ---\
+\выходной файл\end{minipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 14.63507pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 8.63506pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\fontsize{12}{14.4}\selectfont
+
+*\usefont{\ASYencoding}{\ASYfamily}{\ASYseries}{\ASYshape}%
+
+*\setbox\ASYbox=\hbox{\small Печать}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 35.68295pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 7.54149pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 0.0pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\fontsize{12}{14.4}\selectfont
+
+*\usefont{\ASYencoding}{\ASYfamily}{\ASYseries}{\ASYshape}%
+
+*\setbox\ASYbox=\hbox{\small Изменения автора}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 91.18007pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 7.54149pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 2.12863pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\fontsize{12}{14.4}\selectfont
+
+*\usefont{\ASYencoding}{\ASYfamily}{\ASYseries}{\ASYshape}%
+
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\small Исходный файл
+\\*.tex\end{minipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 13.57076pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 7.57074pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\bf\small Компилятор
+\\ядро \TeX\end{minipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 14.7722pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 8.7722pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\small Класс докумен
+та\\Пакеты\end{minipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 13.57076pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 7.57074pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\small Вспомогательн
+ые\\файлы\end{minipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 14.63507pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 8.63506pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\small Шрифты\end{mi
+nipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 7.83507pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 1.83505pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\setbox\ASYbox=\hbox{\begin{minipage}{100.375pt}\centering\small Документ ---\
+\выходной файл\end{minipage}}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 100.375pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\ht\ASYbox
+> 14.63507pt.
+<*> \showthe\ht\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\showthe\dp\ASYbox
+> 8.63506pt.
+<*> \showthe\dp\ASYbox
+                      
+
+
+*
+(Please type a command or say `\end')
+*\setbox\ASYbox=\hbox{\small Печать}
+
+*
+(Please type a command or say `\end')
+*\showthe\wd\ASYbox
+> 35.68295pt.
+<*> \showthe\wd\ASYbox
+                      
+
+
+*
+(Please type a command or
