@@ -1,0 +1,519 @@
+%% План книги
+%% ТеХ для всех - издание третье, дополненное и существенно переработанное.
+
+%% 9 августа 2013
+
+%% Авторский коллектив:
+%% Беляков Н.С.
+%% Палош В.Е.
+%% Садовский П.А.
+
+% % Cм Разбивку глав по авторам!
+
+\documentclass[a4paper,11pt]{book}
+
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english, german, francais, russian]{babel}
+
+\renewcommand\baselinestretch{0.92}
+
+% Общее оформление: 
+% Замечание и Внимание: вернуть значки...
+
+% Выравнивание по середине...
+% Цитаты - ОК
+% красивая заглавная буква...
+
+
+
+% Касательно стилевика или разметки - наверно, я бы переделал по аналогии с издательством Springer, очень уж у них читаемо и красиво... Ну и в целом - грамотно сделано. Шрифт можно слегка уменьшить, размер листа - увеличить (правда, нужно посмотреть другие книги изд-ва УРСС - что у них там есть в плане стандартных форматов).
+
+%% Geometry of the Layout
+%\usepackage[marginparsep=1mm, width=112mm, headsep=10pt, includehead, headheight=14pt, textheight=172mm, centering, twoside]{geometry}
+
+\usepackage[dvips=false,pdftex=false,vtex=false]{geometry}% Формат 70x100/16
+\geometry{
+	paperwidth=175mm,
+	paperheight=250mm,
+	marginparsep=1mm,
+	width=135mm, 
+	headsep=10pt, 
+	includehead, 
+	headheight=14pt, 
+	textheight=203mm, 
+	centering, 
+	twoside
+}
+\usepackage[cam,dvips,a4,center]{crop}
+\crop[cam]
+
+%\usepackage[marginparsep=1mm, width=117mm, headsep=10pt, includehead, headheight=14pt, textheight=185mm, centering, twoside]{geometry} % Формат 60x90/16
+
+
+
+%   Общеупотребительные форматы книг              набор        после о. Наука п.о.  до обр.
+% \DeclareOption{60x90/16}{\def\form@t{8}}  % 113-122*180-190  145*215  140*215     150*225
+% \DeclareOption{70x90/16}{\def\form@t{9}}  % 135-144*180-190  170*215  164*215     175*225
+% \DeclareOption{70x100/16}{\def\form@t{11}}% 135-144*199-208  170*240  164*235     175*250
+
+
+% \textwidth=112mm \textheight=185mm % 60x90/16   113-122*180-190
+% \textwidth=134mm \textheight=185mm % 70x90/16   135-144*180-190
+% \textwidth=134mm \textheight=203mm % 70x100/16  135-144*199-208
+
+
+
+
+%% For indents of the 1st line of paragraph after section name
+\usepackage{indentfirst}
+
+%% For Colors
+%\usepackage{xcolor}
+\usepackage[table]{xcolor}
+%\usepackage{color}
+\usepackage{colortbl}
+
+%% For Lists
+\usepackage{paralist}
+\usepackage{enumerate}
+%\usepackage{enumitem}
+
+
+%% For Footnotes
+\usepackage{footnote}
+\usepackage{ctable}
+
+% % For Chemistry
+\usepackage[version=3]{mhchem}
+
+
+%% For Tables
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+%\usepackage{slashbox}
+\usepackage{booktabs}
+\usepackage[labelsep=period]{caption}
+\usepackage{wrapfig}
+\usepackage{sidecap}
+\usepackage{subfig}
+\usepackage{xtab}
+
+%% For Maths
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+
+
+%% For Multi-Column typing
+\usepackage{multicol}
+
+
+\usepackage{mflogo}
+
+%\usepackage{tikz}
+
+% % For Music
+% %\usepackage{musixtex}
+
+
+\usepackage{marvosym}
+%\usepackage{tipa}
+
+
+
+\usepackage{verbatim}
+\usepackage[multiple]{footmisc}
+
+% % Предметный указатель
+% %\usepackage{showidx}
+\usepackage{makeidx}		% для создания указателя
+%\usepackage{index}
+\makeindex
+
+
+% Bold Italic
+%\newcommand{\bi}[1]{\textbf{\textit{#1}}}
+
+\makeatletter
+
+\input{Definitions-1}
+
+\let\bibfont=\small
+\def\@biblabel#1{#1.}
+
+
+\def\pkg#1{\bgroup\ttfamily#1\egroup}
+
+% Добавляет команду с \ в индекс, но не выводит ее в тексте
+\def\indcom#1{\index{#1@\comm{#1}}}
+
+% Добавляет команду с \ в индекс и выводит ее в тексте
+\def\indcmd#1{\index{#1@\comm{#1}}\comm{#1}}
+
+
+% Добавляет пакет в индекс, но не выводит его в тексте
+\def\indpak#1{\index{#1@\pkg{#1}}}
+
+% добавляет пакет в индекс и выводит в тексте
+\def\indpkg#1{\index{#1@\pkg{#1}}\pkg{#1}}
+
+
+
+
+
+%\newcommand{\comm}[1]{\bgroup\ttfamily\textbackslash#1\egroup}
+%\newcommand{\ltfamily}{\fontfamily{tli}\selectfont}
+%\newcommand{\uishape}{\fontshape{ui}\selectfont}
+%\newcommand{\sishape}{\fontshape{si}\selectfont}
+%\newcommand{\lseries}{\fontseries{l}\selectfont}
+
+\DeclareTextFontCommand{\textlt}{\ltfamily}
+\DeclareTextFontCommand{\textui}{\uishape}
+\DeclareTextFontCommand{\textsi}{\sishape}
+
+
+
+\makeatother
+
+
+\pagestyle{myheadings}
+
+
+
+% % http://en.wikibooks.org/wiki/LaTeX/Print_version#Compressed_PDF_2
+\begin{document}
+
+
+% % ==== Титул и Контртитул ============================================
+	\input{Titels/TitlePage}
+
+
+\frontmatter
+
+% % ==== Предисловие ко второму изданию ================================
+	% Пишут все!
+	\input{Preface} %\chapter*{Предисловие к третьему изданию}
+
+
+% % ==== Оглавление ====================================================
+	\cleardoublepage
+	\begingroup
+	\small
+	\normalbaselines \setlength{\medskipamount}{3pt plus 1pt minus 1pt}
+	\setcounter{tocdepth}{2}\thispagestyle{empty}\tableofcontents
+	\endgroup
+
+
+% % ==== Введение ======================================================
+	% Пишут все
+	\input{Introduction}
+%		% История - Коля
+%		% Доработано 27 июля 2012 с учетом замечаний Виталия
+%		% \input{CH-About/Sec-History} %\section{История создания системы} %Оставить
+
+
+\mainmatter
+
+% % ==== ЧАСТЬ =========================================================
+% % ==== Быстрый старт =================================================
+	\part{Быстрый старт}
+
+
+% % ==== Установка и настройка системы =================================
+	\chapter{Установка и настройка системы}\label{CH:Setup}
+%		% Установка - Петя
+		\input{CH-About/Sec-Install} %\section{\textcolor{blue}{Установка и настройка системы}} % БОЛЕЕ подробно и пошагово
+		% Редакторы - Петя
+		\input{CH-About/Sec-Editors} %\section{\textcolor{blue}{Редакторы для ТеХа (включая орфографию)}}
+
+
+% % ==== Начало работы ==================================================
+	% Заморожено: 12 Января 2013
+	\input{CH-MainFile/Sec-MainFile}
+	% Заморожено: 12 Января 2013
+	\input{CH-MainFile/Sec-StandardClasses} 		%\section{Стандартные классы}
+%	% Писать - Петя
+%	\section{Форматы ввода и вывода}
+%	\input{CH-MainFile/Sec-InFormats} 				%\section{Форматы ввода} % cp1251, cp1251-light,
+%													%utf8 - Петя (под вопросом)
+	\input{CH-MainFile/Sec-OutFormats} 				%\section{Форматы вывода} %
+
+
+
+
+% % ==== ЧАСТЬ =========================================================
+% % ==== Простой текст =================================================
+	\part{Простой текст}
+
+
+% % ==== Набор простого текста =========================================
+	% Заморожено: 12 Января 2013
+	\input{CH-Text/Sec-Text}
+
+
+% % ==== Шрифты и их внешний вид =======================================
+	% Вычитывать: 13 Ноября 2012
+	\input{CH-Fonts/Sec-Fonts}
+
+
+% % ==== Разметка текста и страницы ====================================
+	% Вычитывать: 23 Июля 2013
+	\input{CH-Layout/Sec-Layout}
+%	\input{CH-Layout/Example-Layout} %\section{Продолжение примера}
+
+
+% % ==== Секционирование и рубрикация ==================================
+	% Проверять: 23 Июля 2013
+	\input{CH-Sections/Sec-Sections}
+%	\input{CH-Sections/Example-Sections} %\section{Продолжение сквозного примера}
+
+
+% % ==== Другие элементы оформления ====================================
+	% Дописывать: 13 Ноября 2012
+	\input{CH-GeneralDesign/Sec-GeneralDesign} %
+%	\input{CH-GeneralDesign/Example-GeneralDesign}
+
+
+% % ==== Списки и перечисления =========================================
+	% Добавить примеры и вычитывать: 23 ноября 2012
+	\input{CH-GeneralDesign/Sec-Itemize} %
+
+
+% % ==== Предметные и авторские указатели ==============================
+% % ==== Списки обозначений, Глоссарии =================================
+	% Дописывать много всего: 23 ноября 2012
+	\input{CH-Lists/Sec-Lists} %
+	% Предметный указатель, более подробно
+
+
+% % ==== Библиографическое описание ====================================
+	% Пишут все
+	% Нужно делать, в основном про BibTeX
+	\input{CH-BibTeX/CH-BibTeX} %\chapter{Библиографическое описание}\label{CH:BibTeX}
+	% Не знаю, кто будет писать...
+	% Включить сюда создание списка лит-ры - обычного, а также БибТеХ
+	%\section{Продолжение сквозного примера}
+	% Описание по ГОСТ...
+
+
+
+% % Название <<формулы>> - подумать над переделкой
+% % ==== ЧАСТЬ =========================================================
+% % ==== Формулы =======================================================
+	\part{Формулы}\label{Part:Math}
+
+
+% % ==== Основы математики =============================================
+	% Вычитывать: 8 Августа 2013
+	\include{CH-Math/Math-Basic}
+
+
+% % ==== Тонкости математики ===========================================
+	% Вычитывать: 8 Августа 2013
+	\include{CH-Math/Math-Advance}
+
+
+%% % Выравнивание формул типа align, но чтобы там можно было набирать в том числе и многострочные ф-лы.
+%% % пакет KUVIO для рисования диаграмм. Наверно, надо посмотреть его.
+%% % \mathindent, более детально про нумерацию и выравнивание формул, особенно многострочных
+
+% % ДОБАВЛЕНИЯ
+
+
+% % ==== Химические формулы ============================================
+	% Вычитывать: 13 Ноября 2012
+	\input{CH-Chemistry/Chemistry}
+	% Договорились, что структурные формулы не нужны.
+
+
+% Информатика: листинги программ и пр.
+%\chapter{Физика и Биология}
+%
+%% Виталик - физическое и Биологическое
+%% Правда, вопрос - а что конкретно сюда совать?
+%% Можно что-то типа схем, рисунков + формулы. Физические задачки и т.п.
+%% (очень неплохо сделаны примеры в мануале Tikz - можно по аналогии)
+%% Сюда же можно добавить что-то типа  Системотехники...
+
+% % Как вариант - добавить примеры оформления геометрических и всяких там задачек механики - учитывая опыт пакета TIKZ из предыдущих глав - получится вполне себе интересная глава (механика, геометрия, всякие там схемы электротехники и пр. - можно набрать кучу примеров)
+
+
+
+
+
+
+% % ==== ЧАСТЬ =========================================================
+% % ==== Графические объекты ===========================================
+	\part{Графические объекты: таблицы и рисунки}
+
+
+% % ==== Плавающие объекты =============================================
+	% Вычитывать: 9 августа 2013
+	\include{CH-Floats/Floats}
+
+% % ==== Таблицы =======================================================
+	% Вычитывать: 9 августа 2013
+	\include{CH-Tables/Tables}
+
+% % ==== Многостраничные таблицы =======================================
+	% Вычитывать: 9 августа 2013
+	\include{CH-Tables/MTables}
+
+% % ==== Рисунки =======================================================
+	% Вычитывать: 9 августа 2013
+	\include{CH-Figures/Figures}
+	% Дать ссылку на пакет TIKZ
+
+
+%%% % ==== Пакет TikZ ====================================================
+%%		% По сути - пусто... нужно много писать!
+%%		% Тикз - пишут все!!!
+%%		\include{CH-Tikz/TikZPkg}  % ???
+%%		\section{Продолжение сквозного примера}
+
+
+%%% % ==== Asymptote =====================================================
+% % %\include{CH-Asymptote/AsymptotPkg}			
+%% 		% Оставить только для рисования графиков...
+
+
+
+
+% % ==== ЧАСТЬ =========================================================
+% % ==== Программирование в ТеХ ========================================
+	\part{Программирование в ТеХ}\label{Part:Programming}
+
+
+
+% % ==== Макрокоманды ==================================================
+	\include{CH-Macros/Macros}
+%	\section{\textcolor{blue}{Стилевые файлы}}
+%		\subsection{\textcolor{blue}{Структура стилевого файла}}
+%		\subsection{\textcolor{blue}{Изменение стандартных элементов оформления}}
+%		\subsection{\textcolor{blue}{Создание новых типов разделов}}
+%		\subsection{\textcolor{blue}{Продолжение № 10 сквозного примера}}
+
+
+%Fragile and Robust commands
+%LaTeX commands are either robust or fragile. Fragile commands need special care if they are part of a moving argument.
+%
+%Arguments to some LaTeX commands are called moving arguments because they may be "moved" to other places in the document. For example, the argument of Sectioning comands may be moved to the Table of Contents. Other examples of moving arguments include:
+%
+%	arguments of \caption commands
+%	terminal input and output, \typeout and \typein
+%	commands that produce page headings
+%	the Letter Environment
+%	the \thanks command
+%	an @ expression in the Array or Tabular environment
+%
+%A fragile command that appears in a moving argument must be preceded by a \protect command. The \protect applies only to the immediately following command; if arguments of this command also contain fragile commands, the latter must be protected with their own \protect.
+
+
+% % Можно взять у Марчевского некое подобие стилевика, его использовать в качестве примера
+% % Отедельно дать про набор статей!
+% % Списки литературы, римские цифры
+
+
+
+%%% % ==== ЧАСТЬ =========================================================
+%%% % ==== Особенности оформления электронных документов =================
+%%	\part{Особенности оформления электронных документов}
+%%
+%%	\input{CH-Electronic/Sec-Electronic}
+%%	
+%%	\chapter{Презентации}
+%%		\section{Стандартные пакеты}
+%%		\section{Типы слайдов}
+%%		\section{Дополнительные возможности}
+%%%				% В качестве пожелания: добавить гиперссылки на внешние файлы (например, видео),
+%%% 				% т.к. обычное видео туда сунуть нельзя.
+%%%				% Дать сюда гиперссылки (ВСЕ), убрать их из Секционирования
+%%%				% пакеты hyperref или url
+%%		\section{Пример}
+
+
+
+
+%% % ==== ЧАСТЬ =========================================================
+%% % ==== Дополнения ====================================================
+%		% Основы набора нот
+%		\input{Addons/Notes}
+
+%		% Шахматные партии
+%		%\input{Addons/Chess}
+
+% Кроссворды, судоку...
+
+
+
+
+
+%% % ==== ЧАСТЬ =========================================================
+%% % ==== Приложения ====================================================
+%	\part{Приложения}
+%%	\addcontentsline{toc}{part}{Приложения}
+%
+%
+%	% \chapter{Наиболее частые пакеты и их описание}
+%		\input{Appendix/App-Symbols} %
+%%	%	\input{Appendix/Packages} %
+
+
+% % Возможно имеет смысл дать краткое описание пакетов и перечислить все команды, которые мы использовали из этих пакетов - чтобы была возможность найти необходимый пакет для подключения. В тексте не всегда быстро можно найти. Либо учесть это каким-либо образом в предметном указателе.
+% ДАТЬ ССЫЛКИ НА СТРАНИЦЫ
+%% Например:
+%% \verb|package 1| --- описание пакета (кратенько)
+%%    \команда 1             \команда (n-1)
+%%    \команда 2             \команда n
+%%
+%% \verb|package 2| --- описание пакета (кратенько)
+%%    \команда 1             \команда n
+%%    \команда 2
+%% Ну или давать в 3 столбца --- тут уже дело вкуса.
+
+
+
+
+% % Как вариант: давать в предметном указателе (только для команд, которым нужно подключение пакета):
+% %		Команда (пакет), стр.
+% % Хотя, конечно, это сильно загрузит указатель.
+% % Можно еще давать так:
+% %		Команда, стр. (где встречается в тексте), стр. (где она в списке пакетов, например, курсивом)
+
+	\backmatter
+
+
+
+% % ==== ГЛАВА =========================================================
+% % ==== Предметный указатель ==========================================
+	\addcontentsline{toc}{chapter}{\indexname}
+	{\normalbaselines\footnotesize\printindex}
+
+
+
+% ФУНКЦИОНАЛЬНЫЙ УКАЗАТЕЛЬ
+
+
+
+
+% % ==== ГЛАВА =========================================================
+% % ==== Список литературы =============================================
+	\input{References/References} %
+
+%%% % A.~Syropoulos, A.~Tsolomitis, N.~Sofroniou, Digital typography using LaTeX. Springer.
+
+\clearpage
+\thispagestyle{empty}
+\mbox{}\vfill
+
+\begin{quote}\em
+Только кончая задуманное сочинение, мы уясняем себе, с чего нам следовало его начать.\\[.3cm]
+\mbox{}\hspace{\fill}\rm Блэз Паскаль
+\end{quote}
+
+
+\end{document}
